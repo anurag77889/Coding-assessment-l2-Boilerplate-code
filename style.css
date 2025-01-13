@@ -5,32 +5,60 @@ body {
   width: 100%;
   margin: 0;
 }
-body {
+
+header{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
   align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
-}
-a {
-  display: inline-block;
-  color: lightgrey;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
-  color: white;
-  transform: scale(1.03);
-  text-decoration: none;
-}
-a:active {
-  transform: scale(0.98);
+header div:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  
 }
 
+.navBar{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+
+}
+
+.navBar li{
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.selectOptions {
+  display: flex;
+  gap: 15px;
+}
+
+.sliderImage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderImage img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.sliderImage::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
