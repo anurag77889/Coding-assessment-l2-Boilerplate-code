@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <!-- Loader -->
+    <div id="loader" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- Header -->
     <header>
         <div>
             <img src="/Images/marmetoLogo.png" width="50" height="50">
@@ -27,9 +33,20 @@
             <img src="/Images/cartIcon.png" alt=""width="28px" height="28px">
         </div>
     </header>
+
+    <!-- Overlay Image -->
     <div class="sliderImage">
-        <img src="/Images/cardbg.png" alt="">
+        <img src="/Images/cardbg.png" alt="" class="sliderImg">
+        <div class="sliderContent">
+            <img src="/Images/marmetoLogo.png" width="80px" height="80px" class="logoImage">
+            <h2 class="imageTitle">Cart</h2>
+        </div>
+
+        
+
     </div>
+
+    <!-- Cart -->
     <div class="cartContainer">
         <div class="cartTable">
             <div class="tableHeader">
@@ -38,31 +55,22 @@
                 <span>Quantity</span>
                 <span>Subtotal</span>
             </div>
-            <div class="cartItem">
-                <div class="productInfo">
-                    <img src="/Images/productImage.png" alt="">
-                    <span class="productSpecs">Asgard Sofa</span>
-                </div>
-                <span class="productSpecs">Rs. 250,000.00</span>
-                <input type="number" class="quantity" value="1">
-                <span class="subtotal">Rs. 250,000.00</span>
-                <button class="delete-btn"><img src="/Images/removeIcon.png" width="30px" height="30px"></button>
-            </div>
         </div>
         <div class="cartTotals">
             <h2>Cart Totals</h2>
             <div class="totalsRow">
-                <span class="carttotalsText">Subtotal </span>
-                <span>Rs 250,000.00</span>
+                <span class="carttotalsText">Subtotal</span>
+                <span class="cartTotalsTotal"></span>
             </div>
             <div class="totalsRow">
                 <span class="carttotalsText">Total</span>
-                <span class="total">Rs. 250,000.00</span>
+                <span class="cartTotalsTotal"></span>
             </div>
             <button class="checkoutButton">Check Out</button>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div>
             <img src="/Images/trophyIcon.png" width="60px" height="60px">
