@@ -312,24 +312,31 @@ footer div{
 
 
 
-/* Mobile Styles (for devices with a max width of 767px) */
+//* Mobile Styles (for devices with a max width of 767px) */
 @media screen and (max-width: 767px) {
   /* Header */
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Arrange header items in a single line */
+    justify-content: space-between;
     padding: 10px;
   }
 
   .navBar {
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
+    display: flex;
+    gap: 15px; /* Reduce gap for better fit */
+    flex-wrap: wrap; /* Allow nav items to wrap to next line if needed */
   }
 
   .navBar li {
     font-size: 1rem;
     padding: 5px 0;
+    white-space: nowrap; /* Prevent text overflow in mobile */
+  }
+
+  .selectOptions {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
   }
 
   /* Slider Image */
@@ -339,40 +346,45 @@ footer div{
 
   .sliderImg {
     height: 250px;
+    object-fit: cover;
   }
 
   .sliderContent {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .imageTitle {
     font-size: 18px;
+    text-align: center;
   }
 
   .sliderContent span {
     font-size: 12px;
+    text-align: center;
   }
 
   /* Cart */
   .cartContainer {
-    flex-direction: column;
+    flex-direction: row; /* Arrange cart items in a line */
+    justify-content: space-between;
+    gap: 10px; /* Reduce space between cart components */
     padding: 10px;
   }
 
   .cartTable {
-    width: 100%;
+    flex: 1;
   }
 
   .cartTotals {
-    width: 100%;
+    flex: 1;
     padding: 10px;
   }
 
   .totalsRow {
-    flex-direction: column;
+    flex-direction: column; /* Stack the totals vertically */
     gap: 10px;
   }
 
@@ -381,6 +393,25 @@ footer div{
     font-size: 14px;
     padding: 10px;
   }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  footer div {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .footerHeadings,
+  .footerContent {
+    text-align: center;
+  }
+}
 
   /* Footer */
   footer {
