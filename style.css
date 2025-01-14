@@ -311,8 +311,7 @@ footer div{
 /* Styles for the Footer ends here */
 
 
-
-//* Mobile Styles (for devices with a max width of 767px) */
+/* Mobile Styles (for devices with a max width of 767px) */
 @media screen and (max-width: 767px) {
   /* Header */
   header {
@@ -413,23 +412,6 @@ footer div{
   }
 }
 
-  /* Footer */
-  footer {
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-  }
-
-  footer div {
-    gap: 10px;
-    flex-direction: column;
-  }
-
-  .footerHeadings,
-  .footerContent {
-    text-align: center;
-  }
-}
 
 /* Tablet Styles (for devices with a max width of 1024px) */
 @media screen and (max-width: 1024px) {
@@ -503,4 +485,3 @@ footer div{
     gap: 15px;
   }
 }
-
