@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cartTable = document.querySelector(".cartTable");
 
+  //   Currency Formatter for Indian Rupees
   const currencyFormatter = new Intl.NumberFormat("en-IN", {
     style: "currency",
     currency: "INR",
@@ -96,8 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
       total += itemSubtotal;
     });
     const subtotalElement = document.querySelectorAll(".cartTotalsTotal");
-
-    // subtotalElement.textContent = currencyFormatter.format(total);
 
     subtotalElement.forEach((el) => {
       el.textContent = currencyFormatter.format(total); // Both will show the same value
