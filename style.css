@@ -310,3 +310,166 @@ footer div{
 
 /* Styles for the Footer ends here */
 
+
+
+/* Mobile Styles (for devices with a max width of 767px) */
+@media screen and (max-width: 767px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navBar {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .navBar li {
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+
+  /* Slider Image */
+  .sliderImage {
+    height: 250px;
+  }
+
+  .sliderImg {
+    height: 250px;
+  }
+
+  .sliderContent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+  }
+
+  .imageTitle {
+    font-size: 18px;
+  }
+
+  .sliderContent span {
+    font-size: 12px;
+  }
+
+  /* Cart */
+  .cartContainer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .cartTable {
+    width: 100%;
+  }
+
+  .cartTotals {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .totalsRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .checkoutButton {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  footer div {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .footerHeadings,
+  .footerContent {
+    text-align: center;
+  }
+}
+
+/* Tablet Styles (for devices with a max width of 1024px) */
+@media screen and (max-width: 1024px) {
+  /* Header */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navBar {
+    gap: 30px;
+  }
+
+  .navBar li {
+    font-size: 1rem;
+  }
+
+  /* Slider Image */
+  .sliderImage {
+    height: 280px;
+  }
+
+  .sliderImg {
+    height: 280px;
+  }
+
+  .sliderContent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .imageTitle {
+    font-size: 20px;
+  }
+
+  .sliderContent span {
+    font-size: 13px;
+  }
+
+  /* Cart */
+  .cartContainer {
+    padding: 20px;
+    flex-direction: row;
+  }
+
+  .cartTable {
+    width: 70%;
+  }
+
+  .cartTotals {
+    width: 30%;
+  }
+
+  .totalsRow {
+    gap: 30px;
+  }
+
+  .checkoutButton {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 40px 50px;
+    flex-direction: row;
+  }
+
+  footer div {
+    gap: 15px;
+  }
+}
+
