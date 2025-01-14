@@ -30,26 +30,36 @@
     <div class="sliderImage">
         <img src="/Images/cardbg.png" alt="">
     </div>
-    <div class="cartDetails">
-        <div class="productDetails">
-            <div class="productDetailsHeadings">
-                <li>Product</li>
-                <li>Price</li>
-                <li>Quantity</li>
-                <li>Subtotal</li>
+    <div class="cartContainer">
+        <div class="cartTable">
+            <div class="tableHeader">
+                <span>Product</span>
+                <span>Price</span>
+                <span>Quantity</span>
+                <span>Subtotal</span>
             </div>
-            <div class="productDetailsContent">
-                <div><img src="/Images/productImage.png" alt=""></div>
-                <p>Asgard Sofa</p>
-                <p>Rs 250,000.00</p>
-                <input type="number">
-                <p>Rs 250,000.00</p>
-                <button><img src="/Images/removeIcon.png" alt=""></button>
+            <div class="cartItem">
+                <div class="productInfo">
+                    <img src="/Images/productImage.png" alt="">
+                    <span class="productSpecs">Asgard Sofa</span>
+                </div>
+                <span class="productSpecs">Rs. 250,000.00</span>
+                <input type="number" class="quantity" value="1">
+                <span class="subtotal">Rs. 250,000.00</span>
+                <button class="delete-btn"><img src="/Images/removeIcon.png" width="30px" height="30px"></button>
             </div>
         </div>
         <div class="cartTotals">
-            <p>Subtotal $250000</p>
-            <p>Total $250000</p>
+            <h2>Cart Totals</h2>
+            <div class="totalsRow">
+                <span class="carttotalsText">Subtotal </span>
+                <span>Rs 250,000.00</span>
+            </div>
+            <div class="totalsRow">
+                <span class="carttotalsText">Total</span>
+                <span class="total">Rs. 250,000.00</span>
+            </div>
+            <button class="checkoutButton">Check Out</button>
         </div>
     </div>
 

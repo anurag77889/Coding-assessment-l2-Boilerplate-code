@@ -8,6 +8,8 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 header{
@@ -31,6 +33,7 @@ header div:first-child {
   font-weight: 700;
   
 }
+
 
 
 
@@ -81,22 +84,128 @@ header div:first-child {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.cartDetails{
-  display: flex;
-  padding-top: 72px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.productDetails{
-
-  display: flex;
-}
-
-.productDetailsHeadings{
-  list-style-type: none;
+.cartContainer{
   display: flex;
   gap: 20px;
+  padding: 20px 100px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.cartTable{
+  flex: 2;
+}
+
+
+.tableHeader{
+  /* list-style-type: none;
+  display: flex;
+  gap: 20px;
+  background-color: #FAF3EA;
+  padding: 15px; */
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 40px;
+  align-items: center;
+  background-color: #f8ede6;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.cartItem{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 40px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.productInfo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productInfo img{
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #f8ede6;
+}
+
+.productSpecs {
+  color: #888;
+}
+
+.quantity {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.delete-btn{
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #b08968;
+}
+
+
+.cartTotals {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8ede6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+.cartTotals h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.totalsRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 500px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+  color: #b08968;
+}
+
+.checkoutButton {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s;
+  
+}
+
+.checkoutButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.carttotalsText{
+  color: #000;
 }
 
 footer{
@@ -122,3 +231,6 @@ footer div{
   font-weight: 500;
   color: #898989;
 }
+
+
+
