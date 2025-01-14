@@ -247,6 +247,12 @@ header div:first-child {
   color: #000;
 }
 
+.totalFont{
+  font-weight: 500px;
+  color: #B88E2F;
+  font-size: larger;
+}
+
 /* Styles for the Cart ends here */
 
 
