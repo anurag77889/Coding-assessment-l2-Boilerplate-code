@@ -374,6 +374,7 @@ footer div{
   /* Cart */
   .cartContainer {
     flex-direction: row; /* Arrange cart items in a line */
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px; /* Reduce space between cart components */
     padding: 10px;
